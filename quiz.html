@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Acting Knowledge Quiz | Breana Grace</title>
+
+    <!-- Connect the shared stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load quiz functionality after HTML is parsed -->
+    <script src="quiz.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Main website navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Breana Grace</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="film-tv.html">Film &amp; TV</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Quiz introduction -->
+        <section class="page-intro">
+            <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+
+            <h1>Acting Knowledge Quiz</h1>
+
+            <p>
+                Test what you learned about film,
+                television, theatre, and acting techniques.
+            </p>
+
+            <p>
+                Answer 10 questions within 10 minutes.
+                Each question is worth 10 points.
+                A score of 70% or higher is passing.
+            </p>
+        </section>
+
+        <section class="quiz-container">
+
+            <!-- Countdown timer -->
+            <div class="timer" id="timer"
+                 role="timer" aria-live="off">
+                Time Remaining: 10:00
+            </div>
+
+            <!-- Quiz form -->
+            <form id="quizForm">
+
+                <!-- Question 1: Multiple choice -->
+                <fieldset class="question">
+                    <legend>1. What is the main purpose
+                    of script analysis?</legend>
+
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        Memorizing camera angles
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        Understanding characters,
+                        conflicts, and story
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        Designing costumes
+                    </label>
+                </fieldset>
+
+                <!-- Question 2: Multiple choice -->
+                <fieldset class="question">
+                    <legend>2. Which technique helps
+                    actors maintain consistent
+                    movements between film takes?</legend>
+
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        Improvisation
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Projection
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Continuity
+                    </label>
+                </fieldset>
+
+                <!-- Question 3: Multiple choice -->
+                <fieldset class="question">
+                    <legend>3. What is blocking
+                    in theatre?</legend>
+
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        Planned movements and positions
+                        of actors
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Editing film footage
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Memorizing dialogue
+                    </label>
+                </fieldset>
+
+                <!-- Question 4: Fill in the blank -->
+                <fieldset class="question">
+                    <legend>4. The underlying meaning
+                    behind a character's words
+                    is called ______.</legend>
+
+                    <input type="text" name="q4"
+                           placeholder="Enter your answer">
+                </fieldset>
+
+                <!-- Question 5: Fill in the blank -->
+                <fieldset class="question">
+                    <legend>5. A character's goal
+                    in a scene is called their
+                    ______.</legend>
+
+                    <input type="text" name="q5"
+                           placeholder="Enter your answer">
+                </fieldset>
+
+                <!-- Question 6: Multiple selection -->
+                <fieldset class="question">
+                    <legend>6. Which of the following
+                    are important stage acting skills?
+                    Select all correct answers.</legend>
+
+                    <label>
+                        <input type="checkbox" name="q6" value="a">
+                        Voice projection
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="q6" value="b">
+                        Stage presence
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="q6" value="c">
+                        Blocking
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="q6" value="d">
+                        Film editing
+                    </label>
+                </fieldset>
+
+                <!-- Question 7: Multiple choice -->
+                <fieldset class="question">
+                    <legend>7. What is a major
+                    difference between film
+                    and stage acting?</legend>
+
+                    <label>
+                        <input type="radio" name="q7" value="a">
+                        Film actors never memorize lines
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q7" value="b">
+                        Stage acting is performed
+                        for a live audience
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q7" value="c">
+                        Theatre does not require rehearsals
+                    </label>
+                </fieldset>
+
+                <!-- Question 8: Fill in the blank -->
+                <fieldset class="question">
+                    <legend>8. Creating dialogue
+                    or actions spontaneously
+                    is called ______.</legend>
+
+                    <input type="text" name="q8"
+                           placeholder="Enter your answer">
+                </fieldset>
+
+                <!-- Question 9: Multiple choice -->
+                <fieldset class="question">
+                    <legend>9. Why is emotional
+                    authenticity important
+                    in film acting?</legend>
+
+                    <label>
+                        <input type="radio" name="q9" value="a">
+                        Cameras capture subtle
+                        facial expressions
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q9" value="b">
+                        Actors must always shout
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q9" value="c">
+                        Emotions are unnecessary
+                        in film
+                    </label>
+                </fieldset>
+
+                <!-- Question 10: Multiple choice -->
+                <fieldset class="question">
+                    <legend>10. What does character
+                    motivation explain?</legend>
+
+                    <label>
+                        <input type="radio" name="q10" value="a">
+                        The film's budget
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q10" value="b">
+                        The camera position
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q10" value="c">
+                        Why a character behaves
+                        in a particular way
+                    </label>
+                </fieldset>
+
+                <!-- Quiz buttons -->
+                <button type="submit" id="submitBtn">
+                    Submit Quiz
+                </button>
+
+                <button type="button" id="resetBtn">
+                    Retake Quiz
+                </button>
+
+            </form>
+
+            <!-- JavaScript will display results here -->
+            <section id="results" class="results"
+                     aria-live="polite" hidden>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Breana Grace | Acting Portfolio</p>
+    </footer>
+
+</body>
+</html>
