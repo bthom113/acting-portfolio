@@ -350,3 +350,474 @@ footer {
     }
 }
 
+/* ==========================================
+   Milestone 2 - Interactive Quiz Styling
+   ========================================== */
+
+/* Main quiz area */
+.quiz-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #faf5ef;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Countdown timer */
+.timer {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    background-color: #681f38;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 2px solid #c9a66b;
+}
+
+/* Individual question boxes */
+.quiz-container .question {
+    background-color: white;
+    border: 1px solid #e3d8cf;
+    border-left: 5px solid #c9a66b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+/* Question titles */
+.quiz-container legend {
+    color: #681f38;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Answer choices */
+.quiz-container label {
+    display: block;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Highlight choices when hovered */
+.quiz-container label:hover {
+    background-color: #f4e8df;
+}
+
+/* Radio buttons and checkboxes */
+.quiz-container input[type="radio"],
+.quiz-container input[type="checkbox"] {
+    accent-color: #681f38;
+    margin-right: 10px;
+    transform: scale(1.15);
+}
+
+/* Fill-in-the-blank fields */
+.quiz-container input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 2px solid #c9a66b;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Focus state for keyboard accessibility */
+.quiz-container input[type="text"]:focus {
+    outline: 2px solid #681f38;
+    outline-offset: 2px;
+}
+
+/* Submit and retake buttons */
+#submitBtn,
+#resetBtn {
+    background-color: #681f38;
+    color: white;
+    border: 2px solid #c9a66b;
+    border-radius: 8px;
+    padding: 13px 25px;
+    margin: 10px 10px 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBtn:hover,
+#resetBtn:hover {
+    background-color: #8b3051;
+}
+
+/* Disabled submit button */
+#submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Results section */
+#results {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #c9a66b;
+    border-radius: 12px;
+}
+
+/* Hide results until quiz is submitted */
+#results[hidden] {
+    display: none;
+}
+
+/* Correct answers */
+#results .correct {
+    color: #176534;
+    font-weight: bold;
+}
+
+/* Incorrect answers */
+#results .incorrect {
+    color: #b42318;
+    font-weight: bold;
+}
+
+/* Mobile-friendly quiz */
+@media (max-width: 600px) {
+    .quiz-container {
+        margin: 20px 12px;
+        padding: 15px;
+    }
+
+    .quiz-container .question {
+        padding: 15px;
+    }
+
+    #submitBtn,
+    #resetBtn {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+/* ==========================================
+   Milestone 2 - Interactive Quiz Styling
+   ========================================== */
+
+/* Main quiz area */
+.quiz-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #faf5ef;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Countdown timer */
+.timer {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    background-color: #681f38;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 2px solid #c9a66b;
+}
+
+/* Individual question boxes */
+.quiz-container .question {
+    background-color: white;
+    border: 1px solid #e3d8cf;
+    border-left: 5px solid #c9a66b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+/* Question titles */
+.quiz-container legend {
+    color: #681f38;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Answer choices */
+.quiz-container label {
+    display: block;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Highlight choices when hovered */
+.quiz-container label:hover {
+    background-color: #f4e8df;
+}
+
+/* Radio buttons and checkboxes */
+.quiz-container input[type="radio"],
+.quiz-container input[type="checkbox"] {
+    accent-color: #681f38;
+    margin-right: 10px;
+    transform: scale(1.15);
+}
+
+/* Fill-in-the-blank fields */
+.quiz-container input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 2px solid #c9a66b;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Focus state for keyboard accessibility */
+.quiz-container input[type="text"]:focus {
+    outline: 2px solid #681f38;
+    outline-offset: 2px;
+}
+
+/* Submit and retake buttons */
+#submitBtn,
+#resetBtn {
+    background-color: #681f38;
+    color: white;
+    border: 2px solid #c9a66b;
+    border-radius: 8px;
+    padding: 13px 25px;
+    margin: 10px 10px 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBtn:hover,
+#resetBtn:hover {
+    background-color: #8b3051;
+}
+
+/* Disabled submit button */
+#submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Results section */
+#results {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #c9a66b;
+    border-radius: 12px;
+}
+
+/* Hide results until quiz is submitted */
+#results[hidden] {
+    display: none;
+}
+
+/* Correct answers */
+#results .correct {
+    color: #176534;
+    font-weight: bold;
+}
+
+/* Incorrect answers */
+#results .incorrect {
+    color: #b42318;
+    font-weight: bold;
+}
+
+/* Mobile-friendly quiz */
+@media (max-width: 600px) {
+    .quiz-container {
+        margin: 20px 12px;
+        padding: 15px;
+    }
+
+    .quiz-container .question {
+        padding: 15px;
+    }
+
+    #submitBtn,
+    #resetBtn {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+/* ==========================================
+   Milestone 2 - Interactive Quiz Styling
+   ========================================== */
+
+/* Main quiz area */
+.quiz-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #faf5ef;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Countdown timer */
+.timer {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    background-color: #681f38;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 2px solid #c9a66b;
+}
+
+/* Individual question boxes */
+.quiz-container .question {
+    background-color: white;
+    border: 1px solid #e3d8cf;
+    border-left: 5px solid #c9a66b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+/* Question titles */
+.quiz-container legend {
+    color: #681f38;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Answer choices */
+.quiz-container label {
+    display: block;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Highlight choices when hovered */
+.quiz-container label:hover {
+    background-color: #f4e8df;
+}
+
+/* Radio buttons and checkboxes */
+.quiz-container input[type="radio"],
+.quiz-container input[type="checkbox"] {
+    accent-color: #681f38;
+    margin-right: 10px;
+    transform: scale(1.15);
+}
+
+/* Fill-in-the-blank fields */
+.quiz-container input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 2px solid #c9a66b;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Focus state for keyboard accessibility */
+.quiz-container input[type="text"]:focus {
+    outline: 2px solid #681f38;
+    outline-offset: 2px;
+}
+
+/* Submit and retake buttons */
+#submitBtn,
+#resetBtn {
+    background-color: #681f38;
+    color: white;
+    border: 2px solid #c9a66b;
+    border-radius: 8px;
+    padding: 13px 25px;
+    margin: 10px 10px 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBtn:hover,
+#resetBtn:hover {
+    background-color: #8b3051;
+}
+
+/* Disabled submit button */
+#submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Results section */
+#results {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #c9a66b;
+    border-radius: 12px;
+}
+
+/* Hide results until quiz is submitted */
+#results[hidden] {
+    display: none;
+}
+
+/* Correct answers */
+#results .correct {
+    color: #176534;
+    font-weight: bold;
+}
+
+/* Incorrect answers */
+#results .incorrect {
+    color: #b42318;
+    font-weight: bold;
+}
+
+/* Mobile-friendly quiz */
+@media (max-width: 600px) {
+    .quiz-container {
+        margin: 20px 12px;
+        padding: 15px;
+    }
+
+    .quiz-container .question {
+        padding: 15px;
+    }
+
+    #submitBtn,
+    #resetBtn {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+
