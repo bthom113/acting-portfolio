@@ -1,0 +1,310 @@
+
+/* ====================================
+   Breana Grace Acting Portfolio
+   Main Website Stylesheet
+   ==================================== */
+
+/* Color variables used throughout the website */
+:root {
+    --black: #171318;
+    --burgundy: #681f38;
+    --gold: #c9a66b;
+    --cream: #faf5ef;
+    --white: #ffffff;
+    --gray: #55515a;
+}
+
+/* Reset default browser spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cream);
+    color: var(--black);
+    line-height: 1.7;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--black);
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: var(--gold);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--black),
+        var(--burgundy)
+    );
+    color: var(--white);
+    padding: 110px 8%;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Main content sections */
+.content-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+}
+
+.content-section h2 {
+    color: var(--burgundy);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content-section h3 {
+    margin-bottom: 12px;
+}
+
+.content-section p {
+    margin-bottom: 18px;
+}
+
+/* Interior page introductions */
+.page-intro {
+    background-color: var(--burgundy);
+    color: var(--white);
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.page-intro h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.page-intro p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+/* Content cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 5px solid var(--gold);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: var(--burgundy);
+}
+
+.card a {
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn,
+button {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--black);
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #e0bf88;
+}
+
+/* Lists */
+.content-section ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.content-section li {
+    margin-bottom: 12px;
+}
+
+/* Form controls for the quiz */
+.quiz-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.question {
+    background-color: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid var(--burgundy);
+}
+
+.question label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: var(--burgundy);
+}
+
+/* Quiz timer and results */
+.timer {
+    background-color: var(--black);
+    color: var(--gold);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.results {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.correct {
+    color: #18733a;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #b3261e;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .content-section {
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    .page-intro h1 {
+        font-size: 30px;
+    }
+
+    .quiz-container {
+        padding: 15px;
+    }
+}
