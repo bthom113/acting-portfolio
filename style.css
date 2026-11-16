@@ -308,3 +308,45 @@ footer {
         padding: 15px;
     }
 }
+
+/* ==================================
+   Professional Acting Headshot
+   ================================== */
+
+.headshot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    padding: 15px;
+}
+
+.headshot {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 5px solid #c9a66b;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Slight zoom effect when hovering */
+.headshot:hover {
+    transform: scale(1.03);
+}
+
+/* Adjust image size on mobile devices */
+@media (max-width: 600px) {
+    .headshot {
+        max-width: 260px;
+    }
+
+    .headshot-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
